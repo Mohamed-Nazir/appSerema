@@ -15,14 +15,19 @@ import CustomButton from "../components/UI/Button";
 import CustomIcon from "../components/UI/Icon";
 
 const Login = ({ navigation }) => {
+  const backOnPress = () => {
+    navigation.navigate("home");
+  };
+
   return (
     <SafeAreaView style={styles.container}>
-      <View>
+      <View style={styles.loginContainer}>
         <View style={styles.iconsStyle}>
           <CustomIcon
             name="arrow-back"
             size={Spacing * 2}
             color={Color.primary}
+            onPress={backOnPress}
           />
         </View>
         <View style={styles.welcomeLogin}>
@@ -103,12 +108,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: Color.white,
   },
+  loginContainer: {
+    marginVertical: Spacing * 3,
+  },
   iconsStyle: {
     backgroundColor: "black",
     paddingVertical: Spacing,
     paddingHorizontal: Spacing,
     marginHorizontal: Spacing * 2,
-    marginTop: Spacing * 3,
     borderRadius: 100,
     width: "10%",
     justifyContent: "center",
