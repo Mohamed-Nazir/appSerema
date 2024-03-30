@@ -11,7 +11,7 @@ const Register = ({ navigation }) => {
       <View style={styles.iconsStyle}>
         <Ionicons
           name="arrow-back"
-          size={Spacing * 3}
+          size={Spacing * 2}
           color={Color.primary}
           onPress={() => navigation.navigate("home")}
         />
@@ -36,9 +36,10 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     paddingVertical: Spacing,
     paddingHorizontal: Spacing,
-    marginHorizontal: Spacing * 2,
+    marginHorizontal: Spacing * 3,
+    marginTop: Spacing * 2,
     borderRadius: 100,
-    width: "15%",
+    width: "10%",
     justifyContent: "center",
     alignItems: "center",
   },

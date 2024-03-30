@@ -18,8 +18,6 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   backgroundColor,
   color,
 }) => {
-  const Spacing = 10; // Vous devez définir votre propre valeur de Spacing
-
   return (
     <TouchableOpacity
       style={[

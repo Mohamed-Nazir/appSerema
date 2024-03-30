@@ -12,17 +12,17 @@ import FontSize from "../constants/FontSize";
 import Fonts from "../constants/Fonts";
 import MyTextInput from "../components/UI/InputText";
 import CustomButton from "../components/UI/Button";
+import CustomIcon from "../components/UI/Icon";
 
 const Login = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
         <View style={styles.iconsStyle}>
-          <Ionicons
+          <CustomIcon
             name="arrow-back"
-            size={Spacing * 3}
+            size={Spacing * 2}
             color={Color.primary}
-            onPress={() => navigation.navigate("home")}
           />
         </View>
         <View style={styles.welcomeLogin}>
@@ -63,9 +63,34 @@ const Login = ({ navigation }) => {
           alignItems: "center",
         }}
       >
-        <TouchableOpacity onPress={() => navigation.navigate("register")}>
+        <TouchableOpacity onPress={() => navigation.push("register")}>
           <Text style={styles.createAccountText}>Create new account</Text>
         </TouchableOpacity>
+      </View>
+
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: Spacing * 2,
+        }}
+      >
+        <View style={{ marginRight: Spacing * 2 }}>
+          <CustomIcon
+            name="logo-google"
+            size={Spacing * 3}
+            color={Color.text}
+          />
+        </View>
+        <View style={{ marginRight: Spacing * 2 }}>
+          <CustomIcon name="logo-apple" size={Spacing * 3} color={Color.text} />
+        </View>
+        <CustomIcon
+          name="logo-linkedin"
+          size={Spacing * 3}
+          color={Color.text}
+        />
       </View>
     </SafeAreaView>
   );
@@ -83,8 +108,9 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing,
     paddingHorizontal: Spacing,
     marginHorizontal: Spacing * 2,
+    marginTop: Spacing * 3,
     borderRadius: 100,
-    width: "15%",
+    width: "10%",
     justifyContent: "center",
     alignItems: "center",
   },
