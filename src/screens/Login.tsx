@@ -1,5 +1,11 @@
 import { Ionicons } from "@expo/vector-icons";
-import { Text, View, SafeAreaView, StyleSheet } from "react-native";
+import {
+  Text,
+  View,
+  SafeAreaView,
+  StyleSheet,
+  TouchableOpacity,
+} from "react-native";
 import Spacing from "../constants/Spacing";
 import Color from "../constants/Color";
 import FontSize from "../constants/FontSize";
@@ -32,11 +38,14 @@ const Login = ({ navigation }) => {
         </View>
       </View>
       <View>
-        <Text style={styles.forgetPasswordText}>Forget Password ? </Text>
+        <TouchableOpacity onPress={() => navigation.navigate("forgetPassword")}>
+          <Text style={styles.forgetPasswordText}>Forget Password ? </Text>
+        </TouchableOpacity>
       </View>
       <View
         style={{
-          marginVertical: Spacing * 6,
+          marginTop: Spacing * 6,
+          marginBottom: Spacing * 3,
           justifyContent: "center",
           alignItems: "center",
         }}
@@ -47,6 +56,16 @@ const Login = ({ navigation }) => {
           color={Color.onPrimary}
           backgroundColor={Color.primary}
         />
+      </View>
+      <View
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <TouchableOpacity onPress={() => navigation.navigate("register")}>
+          <Text style={styles.createAccountText}>Create new account</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
@@ -96,5 +115,10 @@ const styles = StyleSheet.create({
     color: Color.primary,
     alignSelf: "flex-end",
     marginHorizontal: Spacing * 2,
+  },
+  createAccountText: {
+    fontSize: FontSize.medium,
+    fontFamily: Fonts["poppins-semiBold"],
+    color: Color.text,
   },
 });
