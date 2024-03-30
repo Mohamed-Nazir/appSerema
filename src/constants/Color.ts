@@ -3,9 +3,10 @@ const black = "#000";
 const dark = "#626262";
 const yellow = "#eab908";
 const gray = "#ECECEC";
-const lightYellow = "#fefde8";
+const lightYellow = "#fefbc3";
 
 export default {
+  white: white,
   darkText: dark,
   text: black,
   background: white,
