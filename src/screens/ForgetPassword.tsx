@@ -24,15 +24,17 @@ const ForgetPassword = ({ navigation }) => {
             onPress={onPressBack}
           />
         </View>
-        <Text style={styles.welcomeRegisterText}>
-          Create new account so you can explore all mobile money services
+        <Text style={styles.welcomeForgetText}>
+          Entrer votre E-mail, un e-mail de rénitialisation vous sera envoyé
         </Text>
         <View style={styles.inputView}>
           <MyTextInput placeholder="Enter your Email" />
-          <View>
+          <View
+            style={{ marginHorizontal: Spacing * 1.75, marginTop: Spacing * 2 }}
+          >
             <CustomButton
               title="Submit"
-              width="90%"
+              width="100%"
               color={Color.onPrimary}
               backgroundColor={Color.primary}
             />
@@ -57,7 +59,7 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     paddingVertical: Spacing,
     paddingHorizontal: Spacing,
-    marginHorizontal: Spacing * 3,
+    marginHorizontal: Spacing * 2,
     marginTop: Spacing * 2,
     borderRadius: 100,
     width: "10%",
@@ -65,13 +67,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   inputView: {
-    paddingVertical: Spacing * 5,
     backgroundColor: "#fff",
   },
-  welcomeRegisterText: {
+  welcomeForgetText: {
     fontSize: FontSize.small,
     fontFamily: Fonts["poppins-semiBold"],
-    width: "80%",
-    textAlign: "center",
+    width: "90%",
+    marginHorizontal: Spacing * 3,
+    marginTop: Spacing * 6,
   },
 });
