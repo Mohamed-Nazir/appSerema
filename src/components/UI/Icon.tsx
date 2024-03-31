@@ -1,6 +1,5 @@
 import { TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import Spacing from "../../constants/Spacing";
 
 interface CustomIconProps {
   name: any;

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, StyleSheet } from "react-native";
 import Spacing from "../../constants/Spacing";
 import Fonts from "../../constants/Fonts";
 import Color from "../../constants/Color";
