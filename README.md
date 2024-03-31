@@ -1,11 +1,6 @@
 **React Native Project: Login/Register/Forget Password UI**
 
 ---
-![Simulator Screenshot - iPhone 15 - 2024-03-31 at 20 46 58](https://github.com/NaZiiru/Serema/assets/165497883/14355729-686b-4f80-b16e-2245958323c3)
-
-![Simulator Screenshot - iPhone 15 - 2024-03-31 at 20 47 02](https://github.com/NaZiiru/Serema/assets/165497883/da82cb7b-3f9a-4e2d-a05b-10c27e4bfa13)
-
-![Simulator Screenshot - iPhone 15 - 2024-03-31 at 20 47 10](https://github.com/NaZiiru/Serema/assets/165497883/361f1018-f934-44eb-b327-49419b9aea54)
 
 ### Overview
 
